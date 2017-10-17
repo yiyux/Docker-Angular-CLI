@@ -2,6 +2,8 @@ FROM node:latest
 
 RUN apt-get update && apt-get install -y vim
 
+EXPOSE 4200
+
 USER node
 
 RUN mkdir /home/node/.npm-global
